@@ -1,0 +1,82 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+html,body
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  font-family: calibri;
+}
+
+.container
+{
+  padding-top: 1px;
+}
+
+.like_container
+{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like_img_con
+{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.like_img_con>img
+{
+  width: 100%;
+}
+
+.circle
+{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  box-shadow: 0px 0px 0px 0.1px rgba(0,0,0,1);
+  transition: all 0.5s;
+  filter: blur(1px);
+}
+
+#like_counter
+{
+  width: 40px;
+  height: 20px;
+  padding: 5px 0;
+  background : #00a4d6;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 0;
+  left: 5px;
+  z-index: -2;
+}
